@@ -20,4 +20,8 @@ void main() {
   List<String> zimmyrabbit = ['안녕하세요','저는','이진채','입니다'];
   final result3 = zimmyrabbit.reduce((value, element) => value + ' ' + element);
   print(result3);
+
+  // ERROR
+  // return 되는 값의 타입이 파라미터의 타입과 같아야 한다
+  //final result4 = zimmyrabbit.reduce((value, element) => value.length + element.length);
 }
